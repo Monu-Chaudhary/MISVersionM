@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MIS_VersionMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MIS_VersionMModelStoreContainer">
+    <EntitySet Name="Employee" EntityType="MIS_VersionMModel.Store.Employee" store:Type="Tables" store:Schema="dbo" store:Name="Employee">
+      <DefiningQuery>SELECT 
+      [Employee].[EMPID] AS [EMPID], 
+      [Employee].[EmpName] AS [EmpName], 
+      [Employee].[EmpEmail] AS [EmpEmail], 
+      [Employee].[EmpAddress] AS [EmpAddress], 
+      [Employee].[EmpPhone] AS [EmpPhone]
+      FROM [dbo].[Employee] AS [Employee]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MIS_VersionM.dbo.Employee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EMPID" />
+      <PropertyRef Name="EmpName" />
+    </Key>
+    <Property Name="EMPID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="EmpName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="EmpEmail" Type="varchar" MaxLength="50" />
+    <Property Name="EmpAddress" Type="varchar" MaxLength="50" />
+    <Property Name="EmpPhone" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

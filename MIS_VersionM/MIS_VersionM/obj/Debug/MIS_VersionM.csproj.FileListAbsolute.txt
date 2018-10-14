@@ -1,0 +1,5 @@
+c:\users\monu\documents\visual studio 2010\Projects\MIS_VersionM\MIS_VersionM\bin\MIS_VersionM.dll
+c:\users\monu\documents\visual studio 2010\Projects\MIS_VersionM\MIS_VersionM\bin\MIS_VersionM.pdb
+c:\users\monu\documents\visual studio 2010\Projects\MIS_VersionM\MIS_VersionM\obj\Debug\MIS_VersionM.dll
+c:\users\monu\documents\visual studio 2010\Projects\MIS_VersionM\MIS_VersionM\obj\Debug\MIS_VersionM.pdb
+C:\Users\Monu\Documents\Visual Studio 2010\Projects\MIS_VersionM\MIS_VersionM\obj\Debug\MIS_VersionM.csprojResolveAssemblyReference.cache
